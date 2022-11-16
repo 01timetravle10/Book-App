@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="theme-color" content="#303030" />
+    <link rel="icon" href="https://d2c24pn6pcl4ug.cloudfront.net/images/favicon32.png" />
+    <link rel="apple-touch-icon" href="https://d2c24pn6pcl4ug.cloudfront.net/images/favicon32.png" />
+    <meta property="og:title" content="Books at builderbook.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://builderbook.org/" />
+    <meta property="og:description"
+        content="Our two books teach you how to build a web application with productive stack." />
+    <link rel="stylesheet" href="https://d2c24pn6pcl4ug.cloudfront.net/css/vs2015.min.css" />
+    <style>
+        #__next {
+            width: 100%;
+            height: 100%;
+        }
+
+        a {
+            font-weight: 400;
+            color: #58a6ff;
+            text-decoration: none;
+            outline: none;
+        }
+
+        hr {
+            border: 0.5px #707070 solid;
+        }
+
+        blockquote {
+            padding: 0 0.5em;
+            margin: 20px 1em;
+            color: #fff;
+            border-left: 0.25em solid #dfe2e5;
+        }
+
+        pre {
+            display: block;
+            overflow-x: auto;
+            padding: 0.5em;
+            background: #303030;
+            color: #fff;
+            border: 1px solid #ddd !important;
+            font-size: 14px;
+        }
+
+        code {
+            font-size: 14px;
+            background: #303030;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        mark {
+            background-color: #ffff0060;
+        }
+    </style>
+
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async="" defer="" data-domain="builderbook.org" src="https://plausible.io/js/plausible.js"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <link as="stylesheet" rel="prefetch" crossorigin="anonymous" type="stylesheet/css" href="/fonts/server.css" />
+    <link rel="stylesheet" href="https://storage.googleapis.com/async-await/nprogress-light-spinner.css" />
+    <title>Builder Book: Build a web application (JavaScript) from scratch.</title>
+    <meta name="description"
+        content="Our two books teach you how to build a web application with productive stack -  React.js, Next.js, Material-UI, Express.js, Mongoose, MongoDB. You will also learn how to integrate third-party services from  AWS, Github, Google, Stripe, MailChimp." />
+    <meta name="next-head-count" content="8" />
+    <link rel="preload" href="/_next/static/1i_of60B1hrtU_qm3Xhn1/pages/index.js" as="script" />
+    <link rel="preload" href="/_next/static/1i_of60B1hrtU_qm3Xhn1/pages/_app.js" as="script" />
+    <link rel="preload" href="/_next/static/runtime/webpack-08f7b238829422e3b9b2.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/commons.acfd3de9d72e3d07454b.js" as="script" />
+    <link rel="preload" href="/_next/static/runtime/main-29d82fc5740c7eea8b7d.js" as="script" />
+
+    <style id="jss-server-side">
+        .MuiGrid-container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+
+        .MuiGrid-item {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .MuiGrid-zeroMinWidth {
+            min-width: 0;
+        }
+
+        .MuiGrid-direction-xs-column {
+            flex-direction: column;
+        }
+
+        .MuiGrid-direction-xs-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .MuiGrid-direction-xs-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .MuiGrid-wrap-xs-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .MuiGrid-wrap-xs-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .MuiGrid-align-items-xs-center {
+            align-items: center;
+        }
+
+        .MuiGrid-align-items-xs-flex-start {
+            align-items: flex-start;
+        }
+
+        .MuiGrid-align-items-xs-flex-end {
+            align-items: flex-end;
+        }
+
+        .MuiGrid-align-items-xs-baseline {
+            align-items: baseline;
+        }
+
+        .MuiGrid-align-content-xs-center {
+            align-content: center;
+        }
+
+        .MuiGrid-align-content-xs-flex-start {
+            align-content: flex-start;
+        }
+
+        .MuiGrid-align-content-xs-flex-end {
+            align-content: flex-end;
+        }
+
+        .MuiGrid-align-content-xs-space-between {
+            align-content: space-between;
+        }
+
+        .MuiGrid-align-content-xs-space-around {
+            align-content: space-around;
+        }
+
+        .MuiGrid-justify-content-xs-center {
+            justify-content: center;
+        }
+
+        .MuiGrid-justify-content-xs-flex-end {
+            justify-content: flex-end;
+        }
+
+        .MuiGrid-justify-content-xs-space-between {
+            justify-content: space-between;
+        }
+
+        .MuiGrid-justify-content-xs-space-around {
+            justify-content: space-around;
+        }
+
+        .MuiGrid-justify-content-xs-space-evenly {
+            justify-content: space-evenly;
+        }
+
+        .MuiGrid-spacing-xs-1 {
+            width: calc(100% + 8px);
+            margin: -4px;
+        }
+
+        .MuiGrid-spacing-xs-1>.MuiGrid-item {
+            padding: 4px;
+        }
+
+        .MuiGrid-spacing-xs-2 {
+            width: calc(100% + 16px);
+            margin: -8px;
+        }
+
+        .MuiGrid-spacing-xs-2>.MuiGrid-item {
+            padding: 8px;
+        }
+
+        .MuiGrid-spacing-xs-3 {
+            width: calc(100% + 24px);
+            margin: -12px;
+        }
+
+        .MuiGrid-spacing-xs-3>.MuiGrid-item {
+            padding: 12px;
+        }
+
+        .MuiGrid-spacing-xs-4 {
+            width: calc(100% + 32px);
+            margin: -16px;
+        }
+
+        .MuiGrid-spacing-xs-4>.MuiGrid-item {
+            padding: 16px;
+        }
+
+        .MuiGrid-spacing-xs-5 {
+            width: calc(100% + 40px);
+            margin: -20px;
+        }
+
+        .MuiGrid-spacing-xs-5>.MuiGrid-item {
+            padding: 20px;
+        }
+
+        .MuiGrid-spacing-xs-6 {
+            width: calc(100% + 48px);
+            margin: -24px;
+        }
+
+        .MuiGrid-spacing-xs-6>.MuiGrid-item {
+            padding: 24px;
+        }
+
+        .MuiGrid-spacing-xs-7 {
+            width: calc(100% + 56px);
+            margin: -28px;
+        }
+
+        .MuiGrid-spacing-xs-7>.MuiGrid-item {
+            padding: 28px;
+        }
+
+        .MuiGrid-spacing-xs-8 {
+            width: calc(100% + 64px);
+            margin: -32px;
+        }
+
+        .MuiGrid-spacing-xs-8>.MuiGrid-item {
+            padding: 32px;
+        }
+
+        .MuiGrid-spacing-xs-9 {
+            width: calc(100% + 72px);
+            margin: -36px;
+        }
+
+        .MuiGrid-spacing-xs-9>.MuiGrid-item {
+            padding: 36px;
+        }
+
+        .MuiGrid-spacing-xs-10 {
+            width: calc(100% + 80px);
+            margin: -40px;
+        }
+
+        .MuiGrid-spacing-xs-10>.MuiGrid-item {
+            padding: 40px;
+        }
+
+        .MuiGrid-grid-xs-auto {
+            flex-grow: 0;
+            max-width: none;
+            flex-basis: auto;
+        }
+
+        .MuiGrid-grid-xs-true {
+            flex-grow: 1;
+            max-width: 100%;
+            flex-basis: 0;
+        }
+
+        .MuiGrid-grid-xs-1 {
+            flex-grow: 0;
+            max-width: 8.333333%;
+            flex-basis: 8.333333%;
+        }
+
+        .MuiGrid-grid-xs-2 {
+            flex-grow: 0;
+            max-width: 16.666667%;
+            flex-basis: 16.666667%;
+        }
+
+        .MuiGrid-grid-xs-3 {
+            flex-grow: 0;
+            max-width: 25%;
+            flex-basis: 25%;
+        }
+
+        .MuiGrid-grid-xs-4 {
+            flex-grow: 0;
+            max-width: 33.333333%;
+            flex-basis: 33.333333%;
+        }
+
+        .MuiGrid-grid-xs-5 {
+            flex-grow: 0;
+            max-width: 41.666667%;
+            flex-basis: 41.666667%;
+        }
+
+        .MuiGrid-grid-xs-6 {
+            flex-grow: 0;
+            max-width: 50%;
+            flex-basis: 50%;
+        }
+
+        .MuiGrid-grid-xs-7 {
+            flex-grow: 0;
+            max-width: 58.333333%;
+            flex-basis: 58.333333%;
+        }
+
+        .MuiGrid-grid-xs-8 {
+            flex-grow: 0;
+            max-width: 66.666667%;
+            flex-basis: 66.666667%;
+        }
+
+        .MuiGrid-grid-xs-9 {
+            flex-grow: 0;
+            max-width: 75%;
+            flex-basis: 75%;
+        }
+
+        .MuiGrid-grid-xs-10 {
+            flex-grow: 0;
+            max-width: 83.333333%;
+            flex-basis: 83.333333%;
+        }
+
+        .MuiGrid-grid-xs-11 {
+            flex-grow: 0;
+            max-width: 91.666667%;
+            flex-basis: 91.666667%;
+        }
+
+        .MuiGrid-grid-xs-12 {
+            flex-grow: 0;
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+
+        @media (min-width:600px) {
+            .MuiGrid-grid-sm-auto {
+                flex-grow: 0;
+                max-width: none;
+                flex-basis: auto;
+            }
+
+            .MuiGrid-grid-sm-true {
+                flex-grow: 1;
+                max-width: 100%;
+                flex-basis: 0;
+            }
+
+            .MuiGrid-grid-sm-1 {
+                flex-grow: 0;
+                max-width: 8.333333%;
+                flex-basis: 8.333333%;
+            }
+
+            .MuiGrid-grid-sm-2 {
+                flex-grow: 0;
+                max-width: 16.666667%;
+                flex-basis: 16.666667%;
+            }
+
+            .MuiGrid-grid-sm-3 {
+                flex-grow: 0;
+                max-width: 25%;
+                flex-basis: 25%;
+            }
+
+            .MuiGrid-grid-sm-4 {
+                flex-grow: 0;
+                max-width: 33.333333%;
+                flex-basis: 33.333333%;
+            }
+
+            .MuiGrid-grid-sm-5 {
+                flex-grow: 0;
+                max-width: 41.666667%;
+                flex-basis: 41.666667%;
+            }
+
+            .MuiGrid-grid-sm-6 {
+                flex-grow: 0;
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+
+            .MuiGrid-grid-sm-7 {
+                flex-grow: 0;
+                max-width: 58.333333%;
+                flex-basis: 58.333333%;
+            }
+
+            .MuiGrid-grid-sm-8 {
+                flex-grow: 0;
+                max-width: 66.666667%;
+                flex-basis: 66.666667%;
+            }
+
+            .MuiGrid-grid-sm-9 {
+                flex-grow: 0;
+                max-width: 75%;
+                flex-basis: 75%;
+            }
+
+            .MuiGrid-grid-sm-10 {
+                flex-grow: 0;
+                max-width: 83.333333%;
+                flex-basis: 83.333333%;
+            }
+
+            .MuiGrid-grid-sm-11 {
+                flex-grow: 0;
+                max-width: 91.666667%;
+                flex-basis: 91.666667%;
+            }
+
+            .MuiGrid-grid-sm-12 {
+                flex-grow: 0;
+                max-width: 100%;
+                flex-basis: 100%;
+            }
+        }
+
+        @media (min-width:960px) {
+            .MuiGrid-grid-md-auto {
+                flex-grow: 0;
+                max-width: none;
+                flex-basis: auto;
+            }
+
+            .MuiGrid-grid-md-true {
+                flex-grow: 1;
+                max-width: 100%;
+                flex-basis: 0;
+            }
+
+            .MuiGrid-grid-md-1 {
+                flex-grow: 0;
+                max-width: 8.333333%;
+                flex-basis: 8.333333%;
+            }
+
+            .MuiGrid-grid-md-2 {
+                flex-grow: 0;
+                max-width: 16.666667%;
+                flex-basis: 16.666667%;
+            }
+
+            .MuiGrid-grid-md-3 {
+                flex-grow: 0;
+                max-width: 25%;
+                flex-basis: 25%;
+            }
+
+            .MuiGrid-grid-md-4 {
+                flex-grow: 0;
+                max-width: 33.333333%;
+                flex-basis: 33.333333%;
+            }
+
+            .MuiGrid-grid-md-5 {
+                flex-grow: 0;
+                max-width: 41.666667%;
+                flex-basis: 41.666667%;
+            }
+
+            .MuiGrid-grid-md-6 {
+                flex-grow: 0;
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+
+            .MuiGrid-grid-md-7 {
+                flex-grow: 0;
+                max-width: 58.333333%;
+                flex-basis: 58.333333%;
+            }
+
+            .MuiGrid-grid-md-8 {
+                flex-grow: 0;
+                max-width: 66.666667%;
+                flex-basis: 66.666667%;
+            }
+
+            .MuiGrid-grid-md-9 {
+                flex-grow: 0;
+                max-width: 75%;
+                flex-basis: 75%;
+            }
+
+            .MuiGrid-grid-md-10 {
+                flex-grow: 0;
+                max-width: 83.333333%;
+                flex-basis: 83.333333%;
+            }
+
+            .MuiGrid-grid-md-11 {
+                flex-grow: 0;
+                max-width: 91.666667%;
+                flex-basis: 91.666667%;
+            }
+
+            .MuiGrid-grid-md-12 {
+                flex-grow: 0;
+                max-width: 100%;
+                flex-basis: 100%;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .MuiGrid-grid-lg-auto {
+                flex-grow: 0;
+                max-width: none;
+                flex-basis: auto;
+            }
+
+            .MuiGrid-grid-lg-true {
+                flex-grow: 1;
+                max-width: 100%;
+                flex-basis: 0;
+            }
+
+            .MuiGrid-grid-lg-1 {
+                flex-grow: 0;
+                max-width: 8.333333%;
+                flex-basis: 8.333333%;
+            }
+
+            .MuiGrid-grid-lg-2 {
+                flex-grow: 0;
+                max-width: 16.666667%;
+                flex-basis: 16.666667%;
+            }
+
+            .MuiGrid-grid-lg-3 {
+                flex-grow: 0;
+                max-width: 25%;
+                flex-basis: 25%;
+            }
+
+            .MuiGrid-grid-lg-4 {
+                flex-grow: 0;
+                max-width: 33.333333%;
+                flex-basis: 33.333333%;
+            }
+
+            .MuiGrid-grid-lg-5 {
+                flex-grow: 0;
+                max-width: 41.666667%;
+                flex-basis: 41.666667%;
+            }
+
+            .MuiGrid-grid-lg-6 {
+                flex-grow: 0;
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+
+            .MuiGrid-grid-lg-7 {
+                flex-grow: 0;
+                max-width: 58.333333%;
+                flex-basis: 58.333333%;
+            }
+
+            .MuiGrid-grid-lg-8 {
+                flex-grow: 0;
+                max-width: 66.666667%;
+                flex-basis: 66.666667%;
+            }
+
+            .MuiGrid-grid-lg-9 {
+                flex-grow: 0;
+                max-width: 75%;
+                flex-basis: 75%;
+            }
+
+            .MuiGrid-grid-lg-10 {
+                flex-grow: 0;
+                max-width: 83.333333%;
+                flex-basis: 83.333333%;
+            }
+
+            .MuiGrid-grid-lg-11 {
+                flex-grow: 0;
+                max-width: 91.666667%;
+                flex-basis: 91.666667%;
+            }
+
+            .MuiGrid-grid-lg-12 {
+                flex-grow: 0;
+                max-width: 100%;
+                flex-basis: 100%;
+            }
+        }
+
+        @media (min-width:1920px) {
+            .MuiGrid-grid-xl-auto {
+                flex-grow: 0;
+                max-width: none;
+                flex-basis: auto;
+            }
+
+            .MuiGrid-grid-xl-true {
+                flex-grow: 1;
+                max-width: 100%;
+                flex-basis: 0;
+            }
+
+            .MuiGrid-grid-xl-1 {
+                flex-grow: 0;
+                max-width: 8.333333%;
+                flex-basis: 8.333333%;
+            }
+
+            .MuiGrid-grid-xl-2 {
+                flex-grow: 0;
+                max-width: 16.666667%;
+                flex-basis: 16.666667%;
+            }
+
+            .MuiGrid-grid-xl-3 {
+                flex-grow: 0;
+                max-width: 25%;
+                flex-basis: 25%;
+            }
+
+            .MuiGrid-grid-xl-4 {
+                flex-grow: 0;
+                max-width: 33.333333%;
+                flex-basis: 33.333333%;
+            }
+
+            .MuiGrid-grid-xl-5 {
+                flex-grow: 0;
+                max-width: 41.666667%;
+                flex-basis: 41.666667%;
+            }
+
+            .MuiGrid-grid-xl-6 {
+                flex-grow: 0;
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+
+            .MuiGrid-grid-xl-7 {
+                flex-grow: 0;
+                max-width: 58.333333%;
+                flex-basis: 58.333333%;
+            }
+
+            .MuiGrid-grid-xl-8 {
+                flex-grow: 0;
+                max-width: 66.666667%;
+                flex-basis: 66.666667%;
+            }
+
+            .MuiGrid-grid-xl-9 {
+                flex-grow: 0;
+                max-width: 75%;
+                flex-basis: 75%;
+            }
+
+            .MuiGrid-grid-xl-10 {
+                flex-grow: 0;
+                max-width: 83.333333%;
+                flex-basis: 83.333333%;
+            }
+
+            .MuiGrid-grid-xl-11 {
+                flex-grow: 0;
+                max-width: 91.666667%;
+                flex-basis: 91.666667%;
+            }
+
+            .MuiGrid-grid-xl-12 {
+                flex-grow: 0;
+                max-width: 100%;
+                flex-basis: 100%;
+            }
+        }
+
+        .MuiAvatar-root {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            font-size: 1.25rem;
+            align-items: center;
+            flex-shrink: 0;
+            font-family: IBM Plex Mono, monospace;
+            line-height: 1;
+            user-select: none;
+            border-radius: 50%;
+            justify-content: center;
+        }
+
+        .MuiAvatar-colorDefault {
+            color: #0d1117;
+            background-color: #757575;
+        }
+
+        .MuiAvatar-rounded {
+            border-radius: 4px;
+        }
+
+        .MuiAvatar-square {
+            border-radius: 0;
+        }
+
+        .MuiAvatar-img {
+            color: transparent;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            text-align: center;
+            text-indent: 10000px;
+        }
+
+        .MuiAvatar-fallback {
+            width: 75%;
+            height: 75%;
+        }
+
+        .MuiButtonBase-root {
+            color: inherit;
+            border: 0;
+            cursor: pointer;
+            margin: 0;
+            display: inline-flex;
+            outline: 0;
+            padding: 0;
+            position: relative;
+            align-items: center;
+            user-select: none;
+            border-radius: 0;
+            vertical-align: middle;
+            -moz-appearance: none;
+            justify-content: center;
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .MuiButtonBase-root::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .MuiButtonBase-root.Mui-disabled {
+            cursor: default;
+            pointer-events: none;
+        }
+
+        @media print {
+            .MuiButtonBase-root {
+                color-adjust: exact;
+            }
+        }
+
+        .MuiButton-root {
+            color: #c9d1d9;
+            padding: 6px 16px;
+            font-size: 0.875rem;
+            min-width: 64px;
+            box-sizing: border-box;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            font-family: IBM Plex Mono, monospace;
+            font-weight: 500;
+            line-height: 1.75;
+            border-radius: 4px;
+            text-transform: none;
+        }
+
+        .MuiButton-root:hover {
+            text-decoration: none;
+            background-color: rgba(201, 209, 217, 0.08);
+        }
+
+        .MuiButton-root.Mui-disabled {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        @media (hover: none) {
+            .MuiButton-root:hover {
+                background-color: transparent;
+            }
+        }
+
+        .MuiButton-root:hover.Mui-disabled {
+            background-color: transparent;
+        }
+
+        .MuiButton-label {
+            width: 100%;
+            display: inherit;
+            align-items: inherit;
+            justify-content: inherit;
+        }
+
+        .MuiButton-text {
+            padding: 6px 8px;
+        }
+
+        .MuiButton-textPrimary {
+            color: #238636;
+        }
+
+        .MuiButton-textPrimary:hover {
+            background-color: rgba(35, 134, 54, 0.08);
+        }
+
+        @media (hover: none) {
+            .MuiButton-textPrimary:hover {
+                background-color: transparent;
+            }
+        }
+
+        .MuiButton-textSecondary {
+            color: #b62324;
+        }
+
+        .MuiButton-textSecondary:hover {
+            background-color: rgba(182, 35, 36, 0.08);
+        }
+
+        @media (hover: none) {
+            .MuiButton-textSecondary:hover {
+                background-color: transparent;
+            }
+        }
+
+        .MuiButton-outlined {
+            border: 1px solid rgba(255, 255, 255, 0.23);
+            padding: 5px 15px;
+        }
+
+        .MuiButton-outlined.Mui-disabled {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .MuiButton-outlinedPrimary {
+            color: #238636;
+            border: 1px solid rgba(35, 134, 54, 0.5);
+        }
+
+        .MuiButton-outlinedPrimary:hover {
+            border: 1px solid #238636;
+            background-color: rgba(35, 134, 54, 0.08);
+        }
+
+        @media (hover: none) {
+            .MuiButton-outlinedPrimary:hover {
+                background-color: transparent;
+            }
+        }
+
+        .MuiButton-outlinedSecondary {
+            color: #b62324;
+            border: 1px solid rgba(182, 35, 36, 0.5);
+        }
+
+        .MuiButton-outlinedSecondary:hover {
+            border: 1px solid #b62324;
+            background-color: rgba(182, 35, 36, 0.08);
+        }
+
+        .MuiButton-outlinedSecondary.Mui-disabled {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @media (hover: none) {
+            .MuiButton-outlinedSecondary:hover {
+                background-color: transparent;
+            }
+        }
+
+        .MuiButton-contained {
+            color: rgba(0, 0, 0, 0.87);
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            background-color: #e0e0e0;
+        }
+
+        .MuiButton-contained:hover {
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+            background-color: #d5d5d5;
+        }
+
+        .MuiButton-contained.Mui-focusVisible {
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiButton-contained:active {
+            box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiButton-contained.Mui-disabled {
+            color: rgba(255, 255, 255, 0.3);
+            box-shadow: none;
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        @media (hover: none) {
+            .MuiButton-contained:hover {
+                box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+                background-color: #e0e0e0;
+            }
+        }
+
+        .MuiButton-contained:hover.Mui-disabled {
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .MuiButton-containedPrimary {
+            color: #fff;
+            background-color: #238636;
+        }
+
+        .MuiButton-containedPrimary:hover {
+            background-color: rgb(24, 93, 37);
+        }
+
+        @media (hover: none) {
+            .MuiButton-containedPrimary:hover {
+                background-color: #238636;
+            }
+        }
+
+        .MuiButton-containedSecondary {
+            color: #fff;
+            background-color: #b62324;
+        }
+
+        .MuiButton-containedSecondary:hover {
+            background-color: rgb(127, 24, 25);
+        }
+
+        @media (hover: none) {
+            .MuiButton-containedSecondary:hover {
+                background-color: #b62324;
+            }
+        }
+
+        .MuiButton-disableElevation {
+            box-shadow: none;
+        }
+
+        .MuiButton-disableElevation:hover {
+            box-shadow: none;
+        }
+
+        .MuiButton-disableElevation.Mui-focusVisible {
+            box-shadow: none;
+        }
+
+        .MuiButton-disableElevation:active {
+            box-shadow: none;
+        }
+
+        .MuiButton-disableElevation.Mui-disabled {
+            box-shadow: none;
+        }
+
+        .MuiButton-colorInherit {
+            color: inherit;
+            border-color: currentColor;
+        }
+
+        .MuiButton-textSizeSmall {
+            padding: 4px 5px;
+            font-size: 0.8125rem;
+        }
+
+        .MuiButton-textSizeLarge {
+            padding: 8px 11px;
+            font-size: 0.9375rem;
+        }
+
+        .MuiButton-outlinedSizeSmall {
+            padding: 3px 9px;
+            font-size: 0.8125rem;
+        }
+
+        .MuiButton-outlinedSizeLarge {
+            padding: 7px 21px;
+            font-size: 0.9375rem;
+        }
+
+        .MuiButton-containedSizeSmall {
+            padding: 4px 10px;
+            font-size: 0.8125rem;
+        }
+
+        .MuiButton-containedSizeLarge {
+            padding: 8px 22px;
+            font-size: 0.9375rem;
+        }
+
+        .MuiButton-fullWidth {
+            width: 100%;
+        }
+
+        .MuiButton-startIcon {
+            display: inherit;
+            margin-left: -4px;
+            margin-right: 8px;
+        }
+
+        .MuiButton-startIcon.MuiButton-iconSizeSmall {
+            margin-left: -2px;
+        }
+
+        .MuiButton-endIcon {
+            display: inherit;
+            margin-left: 8px;
+            margin-right: -4px;
+        }
+
+        .MuiButton-endIcon.MuiButton-iconSizeSmall {
+            margin-right: -2px;
+        }
+
+        .MuiButton-iconSizeSmall>*:first-child {
+            font-size: 18px;
+        }
+
+        .MuiButton-iconSizeMedium>*:first-child {
+            font-size: 20px;
+        }
+
+        .MuiButton-iconSizeLarge>*:first-child {
+            font-size: 22px;
+        }
+
+        .MuiPaper-root {
+            color: #c9d1d9;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            background-color: #424242;
+        }
+
+        .MuiPaper-rounded {
+            border-radius: 4px;
+        }
+
+        .MuiPaper-outlined {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .MuiPaper-elevation0 {
+            box-shadow: none;
+        }
+
+        .MuiPaper-elevation1 {
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation2 {
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation3 {
+            box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation4 {
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation5 {
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation6 {
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation7 {
+            box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation8 {
+            box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation9 {
+            box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation10 {
+            box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation11 {
+            box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation12 {
+            box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation13 {
+            box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation14 {
+            box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation15 {
+            box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation16 {
+            box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation17 {
+            box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation18 {
+            box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation19 {
+            box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation20 {
+            box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation21 {
+            box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation22 {
+            box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation23 {
+            box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation24 {
+            box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiToolbar-root {
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        .MuiToolbar-gutters {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        @media (min-width:600px) {
+            .MuiToolbar-gutters {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        .MuiToolbar-regular {
+            min-height: 56px;
+        }
+
+        @media (min-width:0px) and (orientation: landscape) {
+            .MuiToolbar-regular {
+                min-height: 48px;
+            }
+        }
+
+        @media (min-width:600px) {
+            .MuiToolbar-regular {
+                min-height: 64px;
+            }
+        }
+
+        .MuiToolbar-dense {
+            min-height: 48px;
+        }
+
+        .MuiSnackbar-root {
+            left: 8px;
+            right: 8px;
+            display: flex;
+            z-index: 1400;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .MuiSnackbar-anchorOriginTopCenter {
+            top: 8px;
+        }
+
+        @media (min-width:600px) {
+            .MuiSnackbar-anchorOriginTopCenter {
+                top: 24px;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+            }
+        }
+
+        .MuiSnackbar-anchorOriginBottomCenter {
+            bottom: 8px;
+        }
+
+        @media (min-width:600px) {
+            .MuiSnackbar-anchorOriginBottomCenter {
+                left: 50%;
+                right: auto;
+                bottom: 24px;
+                transform: translateX(-50%);
+            }
+        }
+
+        .MuiSnackbar-anchorOriginTopRight {
+            top: 8px;
+            justify-content: flex-end;
+        }
+
+        @media (min-width:600px) {
+            .MuiSnackbar-anchorOriginTopRight {
+                top: 24px;
+                left: auto;
+                right: 24px;
+            }
+        }
+
+        .MuiSnackbar-anchorOriginBottomRight {
+            bottom: 8px;
+            justify-content: flex-end;
+        }
+
+        @media (min-width:600px) {
+            .MuiSnackbar-anchorOriginBottomRight {
+                left: auto;
+                right: 24px;
+                bottom: 24px;
+            }
+        }
+
+        .MuiSnackbar-anchorOriginTopLeft {
+            top: 8px;
+            justify-content: flex-start;
+        }
+
+        @media (min-width:600px) {
+            .MuiSnackbar-anchorOriginTopLeft {
+                top: 24px;
+                left: 24px;
+                right: auto;
+            }
+        }
+
+        .MuiSnackbar-anchorOriginBottomLeft {
+            bottom: 8px;
+            justify-content: flex-start;
+        }
+
+        @media (min-width:600px) {
+            .MuiSnackbar-anchorOriginBottomLeft {
+                left: 24px;
+                right: auto;
+                bottom: 24px;
+            }
+        }
+
+        html {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        strong,
+        b {
+            font-weight: 700;
+        }
+
+        body {
+            color: #c9d1d9;
+            margin: 0;
+            font-size: 0.875rem;
+            font-family: IBM Plex Mono, monospace;
+            font-weight: 400;
+            line-height: 1.43;
+            background-color: #0d1117;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+            }
+        }
+
+        body::backdrop {
+            background-color: #0d1117;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <div>
+            <div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+                style="height:64px;padding-right:20px;background-color:#424242">
+                <div
+                    class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-around">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1" style="text-align:left">
+                        <div class="MuiAvatar-root MuiAvatar-circular" style="margin:0px auto 0px 20px;cursor:pointer">
+                            <img alt="Builder Book logo"
+                                src="https://d2c24pn6pcl4ug.cloudfront.net/images/builderbook-logo.svg"
+                                class="MuiAvatar-img" /></div>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-11 MuiGrid-grid-sm-11"
+                        style="text-align:right">
+                        <div style="display:inline-block"><a
+                                style="margin:0px 30px 0px 0px;text-decoration:underline;text-underline-position:under"
+                                href="/">Book 1: Builder Book</a><a
+                                style="margin:0px 30px 0px 0px;text-decoration:none;text-underline-position:under"
+                                href="/book">Book 2: SaaS Boilerplate</a><a
+                                style="margin:0px 30px 0px 0px;text-decoration:none;text-underline-position:under"
+                                href="/book-reviews">Reviews</a><button
+                                class="MuiButtonBase-root MuiButton-root MuiButton-outlined" tabindex="0" type="button"
+                                style="margin:20px;font-size:14px"><span class="MuiButton-label">Log in</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px 8%">
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-around" align="flex-start">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12"
+                        style="text-align:center"><br />
+                        <h1 style="text-align:center;font-weight:400;line-height:45px;font-size:44px">Book 1: Builder
+                            Book</h1><iframe
+                            src="https://ghbtns.com/github-btn.html?user=async-labs&amp;repo=builderbook&amp;type=star&amp;count=true&amp;size=large"
+                            frameBorder="0" scrolling="0" width="160px" height="30px"
+                            title="Builder Book on GitHub"></iframe>
+                        <p>Learn how to build a full-stack, production-ready JavaScript web application from scratch.
+                        </p>
+                        <p>Unlike online tutorials, which can be outdated, disjointed, and frustrating to fit together,
+                            <br /> our book gives you a structured, up-to-date guide on building a complete web app from
+                            start to finish.</p>
+                        <p style="text-align:center"><a href="https://builderbook.org/books/builder-book/introduction"
+                                target="_blank" rel="noopener noreferrer"><button
+                                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+                                    tabindex="0" type="button" style="margin:20px;font-size:14px"><span
+                                        class="MuiButton-label">Preview &amp; buy book for $99</span></button></a></p>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+                        style="text-align:center;padding:10px;display:inline-block;width:100%">
+                        <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                            style="padding:20px 10px;text-align:left;height:auto">
+                            <div class="MuiAvatar-root MuiAvatar-circular"
+                                style="width:80px;height:80px;margin:0px auto 15px"><img
+                                    src="https://d2w0479rccr6dx.cloudfront.net/book-reviews/sam-reaves-picture.jpeg"
+                                    class="MuiAvatar-img" /></div>
+                            <p style="text-align:center"><a href="https://www.linkedin.com/in/samreaves/"
+                                    target="_blank" rel="noopener noreferrer">Sam Reaves</a></p>
+                            <p style="padding:20px 10px;text-align:left;height:auto;font-family:Roboto, sans-serif">
+                                &quot;I use Udemy for learning specific technologies but chose Builder Book after being
+                                impressed with their website being the actual project you build. The up to date, step by
+                                step instructions made creating the app a breeze.&quot;</p>
+                        </div>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+                        style="text-align:center;padding:10px;display:inline-block;width:100%">
+                        <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                            style="padding:20px 10px;text-align:left;height:auto">
+                            <div class="MuiAvatar-root MuiAvatar-circular"
+                                style="width:80px;height:80px;margin:0px auto 15px"><img
+                                    src="https://d2w0479rccr6dx.cloudfront.net/book-reviews/salie-lie-picture.jpg"
+                                    class="MuiAvatar-img" /></div>
+                            <p style="text-align:center"><a href="https://www.linkedin.com/in/salielim/" target="_blank"
+                                    rel="noopener noreferrer">Salie Lim</a></p>
+                            <p style="padding:20px 10px;text-align:left;height:auto;font-family:Roboto, sans-serif">
+                                &quot;Builder Book is by far the best book I have found on the MERN stack. It also
+                                covers testing. Very comprehensive book with explanations so that you actually
+                                understand what the code does.&quot;<br /><br /></p>
+                        </div>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+                        style="text-align:center;padding:10px;display:inline-block;width:100%">
+                        <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                            style="padding:20px 10px;text-align:left;height:auto">
+                            <div class="MuiAvatar-root MuiAvatar-circular"
+                                style="width:80px;height:80px;margin:0px auto 15px"><img
+                                    src="https://d2w0479rccr6dx.cloudfront.net/book-reviews/earllee-picture.jpg"
+                                    class="MuiAvatar-img" /></div>
+                            <p style="text-align:center"><a href="https://www.linkedin.com/in/earlvlee/" target="_blank"
+                                    rel="noopener noreferrer">Earl Lee</a></p>
+                            <p style="padding:20px 10px;text-align:left;height:auto;font-family:Roboto, sans-serif">
+                                &quot;As an engineer turned product manager that&#x27;s a few years removed from writing
+                                code, Builder Book has been a quick and convenient way to brush up on full-stack web
+                                development and learn React for a side project.&quot;</p>
+                        </div>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+                        style="text-align:center;padding:10px;display:inline-block;width:100%">
+                        <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                            style="padding:20px 10px;text-align:left;height:auto">
+                            <div class="MuiAvatar-root MuiAvatar-circular"
+                                style="width:80px;height:80px;margin:0px auto 15px"><img
+                                    src="https://avatars1.githubusercontent.com/u/29977869?s=460&amp;v=4"
+                                    class="MuiAvatar-img" /></div>
+                            <p style="text-align:center"><a href="https://github.com/rickhallett" target="_blank"
+                                    rel="noopener noreferrer">Rick Hallett</a></p>
+                            <p style="padding:20px 10px;text-align:left;height:auto;font-family:Roboto, sans-serif">
+                                &quot;The authors are particularly receptive to open-source issues and pull-requests;
+                                this made my experience very worthwhile. Strongly recommend to those going from junior
+                                to middleweight JavaScript developers&quot;</p>
+                        </div>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12"
+                        style="text-align:center"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+                            tabindex="0" type="button" style="margin:20px;font-size:14px"><span
+                                class="MuiButton-label">See All Reviews</span></button><a href="#about-us"><button
+                                class="MuiButtonBase-root MuiButton-root MuiButton-outlined" tabindex="0" type="button"
+                                style="margin:20px;font-size:14px"><span class="MuiButton-label">About
+                                    us</span></button></a></div>
+                </div>
+                <h1 style="text-align:center;font-weight:400;line-height:45px;font-size:44px">Why this book?</h1>
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-around" align="flex-start">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                        style="text-align:left;padding:10px 45px">
+                        <p><b>Robust JavaScript stack</b></p>
+                        <p>Learn how to build a web app with React.js, Next.js, Material-UI, Express.js, Mongoose, and
+                            MongoDB. We regularly update the book with the latest versions of all dependencies.</p>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                        style="text-align:left;padding:10px 45px">
+                        <p><b>Popular third-party APIs</b></p>
+                        <p>Learn how to integrate a web app with Google for user authentication, GitHub for markdown and
+                            collaboration, AWS SES for transactional emails, MailChimp for newsletters, and Stripe for
+                            selling.</p>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                        style="text-align:left;padding:10px 45px">
+                        <p><b>Build a complete web application</b></p>
+                        <p>We cover every step of building a web app - writing pages/components, creating a server,
+                            connecting a database, integrating internal and external API infrastructures, and more. You
+                            could spend days or weeks searching these topics on Google. The web app you build in this
+                            book can be used to sell your own paywalled content and as a portfolio item.</p>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                        style="text-align:left;padding:10px 45px">
+                        <p><b>Public support</b></p>
+                        <p>If you have questions, search our closed<a
+                                href="https://github.com/async-labs/builderbook/issues?q=is%3Aissue+is%3Aclosed"
+                                target="_blank" rel="noopener noreferrer">
+                                <!-- -->Github issues
+                            </a> <!-- -->or create a new one. We are happy to answer beginner to expert-level questions.
+                            With the help of our readers, we&#x27;ve made many improvements to our book. If you
+                            purchased our book, we typically reply within 1 or 2 days.</p>
+                    </div>
+                </div><br />
+                <div>
+                    <h1 style="text-align:center;font-weight:400;line-height:45px;font-size:44px"> Table of Contents
+                    </h1>
+                    <p style="text-align:center"><button
+                            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+                            tabindex="0" type="button" style="margin:20px;font-size:14px"><span
+                                class="MuiButton-label">Preview &amp; buy book for $99</span></button></p>
+                    <div>
+                        <div class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-around"
+                            style="padding:0% 8%" align="flex-start">
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                                style="text-align:left">
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/introduction">Introduction</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/introduction#what-you-will-learn"
+                                                    style="color:#fff">What you will learn</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/introduction#why-should-i-pay-99-for-this-book-"
+                                                    style="color:#fff">Why should I pay $99 for this book?</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/introduction#project-structure"
+                                                    style="color:#fff">Project structure</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/introduction#screenshots"
+                                                    style="color:#fff">Screenshots</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/introduction#customer-pages"
+                                                            style="color:#fff">Customer pages</a></li>
+                                                    <li><a href="/books/builder-book/introduction#admin-pages"
+                                                            style="color:#fff">Admin pages</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/introduction#authors"
+                                                    style="color:#fff">Authors</a>
+                                                <ul></ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles">Chapter
+                                                1: Set up Node.js project. VS code editor and lint. Set up Next.js
+                                                project. Material-UI integration. Server-side rendering. Custom
+                                                styles.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#set-up-node-js-project"
+                                                    style="color:#fff">Set up Node.js project</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#installing-node-js-and-yarn"
+                                                            style="color:#fff">Installing Node.js and Yarn</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#package-json"
+                                                            style="color:#fff">package.json</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#vs-code-editor-and-lint"
+                                                    style="color:#fff">VS code editor and lint</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#vs-code-editor"
+                                                            style="color:#fff">VS code editor</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#eslint-and-prettier"
+                                                            style="color:#fff">ESLint and Prettier</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#set-up-next-js-project"
+                                                    style="color:#fff">Set up Next.js project</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#basic-structure"
+                                                            style="color:#fff">Basic structure</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#compiling-code"
+                                                            style="color:#fff">Compiling code</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#document-hoc"
+                                                            style="color:#fff">Document HOC</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#app-hoc-extension"
+                                                            style="color:#fff">App HOC extension</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#index-page"
+                                                            style="color:#fff">Index page</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#header-component"
+                                                            style="color:#fff">Header component</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#material-ui-integration"
+                                                    style="color:#fff">Material-UI integration</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#mydocument-component"
+                                                            style="color:#fff">MyDocument component</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#spread-operator"
+                                                            style="color:#fff">Spread operator</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#theme-and-themeprovider"
+                                                            style="color:#fff">theme and ThemeProvider</a></li>
+                                                    <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#testing-next-js-material-ui-integration"
+                                                            style="color:#fff">Testing Next.js/Material-UI
+                                                            integration</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#server-side-rendering"
+                                                    style="color:#fff">Server-side rendering</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles#custom-styles"
+                                                    style="color:#fff">Custom styles</a>
+                                                <ul></ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components">Chapter
+                                                2: HTTP. Express server. Next-Express server, nodemon.
+                                                Index.getInitialProps. User data model and mongoose. MongoDB database
+                                                and dotenv. Testing server-database connection. Retrieving document.
+                                                Session and cookie. MenuWithAvatar and Header components.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#http"
+                                                    style="color:#fff">HTTP</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#express-server"
+                                                    style="color:#fff">Express server</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#next-express-server-nodemon"
+                                                            style="color:#fff">Next-Express server, nodemon</a></li>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#index-getinitialprops"
+                                                            style="color:#fff">Index.getInitialProps</a></li>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#testing-new-server"
+                                                            style="color:#fff">Testing new server</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#user-data-model-and-mongoose"
+                                                    style="color:#fff">User data model and mongoose</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#mongodb-database-and-dotenv"
+                                                    style="color:#fff">MongoDB database and dotenv</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#testing-server-database-connection"
+                                                            style="color:#fff">Testing server-database connection</a>
+                                                    </li>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#retrieving-document"
+                                                            style="color:#fff">Retrieving document</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#session"
+                                                    style="color:#fff">Session</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#configure-session"
+                                                            style="color:#fff">Configure session</a></li>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#save-session"
+                                                            style="color:#fff">Save session</a></li>
+                                                    <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#testing-session-and-cookie"
+                                                            style="color:#fff">Testing session and cookie</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components#menuwithavatar-and-header-components"
+                                                    style="color:#fff">MenuWithAvatar and Header components</a>
+                                                <ul></ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform">Chapter
+                                                3: Authentication HOC. getInitialProps method. Login page and NProgress.
+                                                Asynchronous execution. Promise.then. async/await. Google Oauth API
+                                                infrastructure. setupGoogle, verify, passport, strategy. Express routes
+                                                /auth/google, /oauth2callback, /logout. generateSlug. this. Set up at
+                                                Google Cloud Platform.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#authentication-hoc-withauth"
+                                                    style="color:#fff">Authentication HOC withAuth</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#getinitialprops-method"
+                                                            style="color:#fff">getInitialProps method</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#parameters-for-withauth-hoc"
+                                                            style="color:#fff">Parameters for withAuth HOC</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#testing-withauth"
+                                                            style="color:#fff">Testing withAuth</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#login-page-and-nprogress"
+                                                    style="color:#fff">Login page and NProgress</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#asynchronous-execution-and-callback"
+                                                    style="color:#fff">Asynchronous execution and callback</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#promise-then"
+                                                            style="color:#fff">Promise.then</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#async-await"
+                                                            style="color:#fff">async/await</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#google-oauth-api-infrastructure"
+                                                    style="color:#fff">Google Oauth API infrastructure</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#setupgoogle-verify-passport-and-strategy"
+                                                            style="color:#fff">setupGoogle, verify, passport and
+                                                            strategy</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#express-routes-auth-google-oauth2callback-logout"
+                                                            style="color:#fff">Express routes /auth/google,
+                                                            /oauth2callback, /logout</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#user-publicfields-and-user-signinorsignup-methods"
+                                                            style="color:#fff">User.publicFields and User.signInOrSignUp
+                                                            methods</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#generateslug-method"
+                                                            style="color:#fff">generateSlug method</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#this"
+                                                            style="color:#fff">this</a></li>
+                                                    <li><a href="/books/builder-book/authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform#set-up-at-google-cloud-platform-and-testing"
+                                                            style="color:#fff">Set up at Google Cloud Platform and
+                                                            testing</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method">Chapter
+                                                4: Testing method with Jest. Transactional email API with AWS SES
+                                                service. Set up AWS SES service, security credentials. sendEmail method.
+                                                Export and import syntax for server code. EmailTemplate data model.
+                                                Update User.signInOrSignUp. Informational success/error messages.
+                                                Notifier component. notify method.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#testing-method-with-jest"
+                                                    style="color:#fff">Testing method with Jest</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#transactional-email-api-with-aws-ses-service"
+                                                    style="color:#fff">Transactional email API with AWS SES service</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#set-up-aws-ses-service-security-credentials"
+                                                            style="color:#fff">Set up AWS SES service, security
+                                                            credentials</a></li>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#sendemail-method"
+                                                            style="color:#fff">sendEmail method</a></li>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#export-and-import-syntax-for-server-code"
+                                                            style="color:#fff">Export and import syntax for server
+                                                            code</a></li>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#emailtemplate-data-model-inserttemplates-and-getemailtemplate-methods"
+                                                            style="color:#fff">EmailTemplate data model, insertTemplates
+                                                            and getEmailTemplate methods</a></li>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#update-user-signinorsignup"
+                                                            style="color:#fff">Update User.signInOrSignUp</a></li>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#testing"
+                                                            style="color:#fff">Testing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#informational-success-error-messages"
+                                                    style="color:#fff">Informational success/error messages</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#notifier-component"
+                                                            style="color:#fff">Notifier component</a></li>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#notify-method"
+                                                            style="color:#fff">notify method</a></li>
+                                                    <li><a href="/books/builder-book/testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method#example-of-usage"
+                                                            style="color:#fff">Example of usage</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                            </div>
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                                style="text-align:left">
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api">Chapter
+                                                5: Book data model. Chapter data model. MongoDB index. API
+                                                infrastructure and user roles. Read chapter API.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#book-data-model"
+                                                    style="color:#fff">Book data model</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#schema-for-book-data-model"
+                                                            style="color:#fff">Schema for Book data model</a></li>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#static-methods-for-book-data-model"
+                                                            style="color:#fff">Static methods for Book data model</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#chapter-data-model"
+                                                    style="color:#fff">Chapter data model</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#schema-for-chapter-data-model"
+                                                            style="color:#fff">Schema for Chapter data model</a></li>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#static-methods-for-chapter-data-model"
+                                                            style="color:#fff">Static methods for Chapter data model</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#mongodb-index"
+                                                    style="color:#fff">MongoDB index</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#api-infrastructure-and-user-roles"
+                                                    style="color:#fff">API infrastructure and user roles</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#pages-and-components-for-user-roles"
+                                                            style="color:#fff">Pages and components for user roles</a>
+                                                    </li>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#api-methods-by-user-roles"
+                                                            style="color:#fff">API methods by user roles</a></li>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#express-routes-by-user-roles"
+                                                            style="color:#fff">Express routes by user roles</a></li>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#custom-routing-for-pages"
+                                                            style="color:#fff">Custom routing for pages</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#read-chapter-api"
+                                                    style="color:#fff">Read chapter API</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#readchapter-page"
+                                                            style="color:#fff">ReadChapter page</a></li>
+                                                    <li><a href="/books/builder-book/book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api#testing-read-chapter-api"
+                                                            style="color:#fff">Testing Read chapter API</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing">Chapter
+                                                6: Set up Github API infrastructure. Sync content API infrastructure.
+                                                Missing UI infrastructure for Admin user. Two improvements.
+                                                Testing.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#set-up-github-api-infrastructure"
+                                                    style="color:#fff">Set up Github API infrastructure</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#setupgithub-method"
+                                                            style="color:#fff">setupGithub method</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#github-related-express-routes"
+                                                            style="color:#fff">Github-related Express routes</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#sync-content-api-infrastructure"
+                                                    style="color:#fff">Sync content API infrastructure</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#github-server-side-methods"
+                                                            style="color:#fff">Github server-side methods</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#book-synccontent-and-chapter-synccontent"
+                                                            style="color:#fff">Book.syncContent and
+                                                            Chapter.syncContent</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#markdowntohtml-and-getsections-methods"
+                                                            style="color:#fff">markdownToHtml and getSections
+                                                            methods</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#express-routes-for-admin-user"
+                                                            style="color:#fff">Express routes for Admin user</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#api-methods-for-admin-user"
+                                                            style="color:#fff">API methods for Admin user</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#missing-ui-infrastructure-for-admin-user"
+                                                    style="color:#fff">Missing UI infrastructure for Admin user</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#two-improvements"
+                                                    style="color:#fff">Two improvements</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#routeswithslug"
+                                                            style="color:#fff">routesWithSlug</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#redirect-ux-for-admin-and-customer-users"
+                                                            style="color:#fff">Redirect UX for Admin and Customer
+                                                            users</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#testing"
+                                                    style="color:#fff">Testing</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#connecting-github"
+                                                            style="color:#fff">Connecting Github</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#adding-new-book"
+                                                            style="color:#fff">Adding new book</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#editing-existing-book"
+                                                            style="color:#fff">Editing existing book</a></li>
+                                                    <li><a href="/books/builder-book/set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing#syncing-content"
+                                                            style="color:#fff">Syncing content</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser">Chapter
+                                                7: Table of Contents. Sections. Sidebar. Toggle TOC. Highlight for
+                                                section. Active section. Hide Header. Mobile browser.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#table-of-contents"
+                                                    style="color:#fff">Table of Contents</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#sections"
+                                                            style="color:#fff">Sections</a></li>
+                                                    <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#sidebar"
+                                                            style="color:#fff">Sidebar</a></li>
+                                                    <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#toggle-toc"
+                                                            style="color:#fff">Toggle TOC</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#highlight-for-section"
+                                                    style="color:#fff">Highlight for section</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#active-section"
+                                                            style="color:#fff">Active section</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#hide-header"
+                                                    style="color:#fff">Hide Header</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser#mobile-browser"
+                                                    style="color:#fff">Mobile browser</a>
+                                                <ul></ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api">Chapter
+                                                8: BuyButton component. Buy book API infrastructure. Setup at Stripe
+                                                dashboard and environmental variables. isPurchased and ReadChapter page.
+                                                Redirect. My books API and MyBooks page. Mailchimp API.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#buybutton-component"
+                                                    style="color:#fff">BuyButton component</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#buy-book-api-infrastructure"
+                                                    style="color:#fff">Buy book API infrastructure</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#fetchcheckoutsessionapimethod-api-method"
+                                                            style="color:#fff">fetchCheckoutSessionApiMethod API
+                                                            method</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#express-route-stripe-fetch-checkout-session"
+                                                            style="color:#fff">Express route
+                                                            /stripe/fetch-checkout-session</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#stripe-method-createsession"
+                                                            style="color:#fff">Stripe method createSession</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#express-route-for-request-from-stripe-server-retrievesession"
+                                                            style="color:#fff">Express route for request from Stripe
+                                                            server, retrieveSession</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#setup-at-stripe-dashboard-and-environmental-variables"
+                                                    style="color:#fff">Setup at Stripe dashboard and environmental
+                                                    variables</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#static-method-book-buy"
+                                                            style="color:#fff">Static method Book.buy</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#purchase-data-model"
+                                                            style="color:#fff">Purchase data model</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#ispurchased-and-readchapter-page"
+                                                    style="color:#fff">isPurchased and ReadChapter page</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#ispurchased-preview-and-full-content"
+                                                            style="color:#fff">isPurchased, preview and full content</a>
+                                                    </li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#adding-buybutton-to-readchapter"
+                                                            style="color:#fff">Adding BuyButton to ReadChapter</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#testing-buy-book-api"
+                                                            style="color:#fff">Testing Buy book API</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#redirect"
+                                                    style="color:#fff">Redirect</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#my-books-api-and-mybooks-page"
+                                                    style="color:#fff">My books API and MyBooks page</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#getmybooklistapimethod-api-method"
+                                                            style="color:#fff">getMyBookListApiMethod API method</a>
+                                                    </li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#express-route-my-books"
+                                                            style="color:#fff">Express route /my-books</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#static-method-book-getpurchasedbooks"
+                                                            style="color:#fff">Static method Book.getPurchasedBooks</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#mailchimp-api"
+                                                    style="color:#fff">Mailchimp API</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#callapi-method"
+                                                            style="color:#fff">callAPI method</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#addtomailchimp-method"
+                                                            style="color:#fff">addToMailchimp method</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#adding-addtomailchimp-to-user-signinorsignup-and-book-buy"
+                                                            style="color:#fff">Adding addToMailchimp to
+                                                            User.signInOrSignUp and Book.buy</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#environmental-variables-for-mailchimp-api"
+                                                            style="color:#fff">Environmental variables for Mailchimp
+                                                            API</a></li>
+                                                    <li><a href="/books/builder-book/buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api#testing-mailchimp-api"
+                                                            style="color:#fff">Testing Mailchimp API</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                                <div>
+                                    <div class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                        style="padding:10px;margin:5px;font-size:16px"><b><a
+                                                href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk">Chapter
+                                                9: Prepare project for deployment. Environmental variables,
+                                                production/development. Logger. SEO, robots.txt, sitemap.xml.
+                                                Compression and security. Deploy project. Heroku. Testing deployed
+                                                project. AWS Elastic Beanstalk.</a></b><br />
+                                        <ul>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#prepare-project-for-deployment"
+                                                    style="color:#fff">Prepare project for deployment</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#environmental-variables-production-development"
+                                                            style="color:#fff">Environmental variables,
+                                                            production/development</a></li>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#logger"
+                                                            style="color:#fff">Logger</a></li>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#seo-robots-txt-sitemap-xml"
+                                                            style="color:#fff">SEO: robots.txt, sitemap.xml</a></li>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#google-analytics"
+                                                            style="color:#fff">Google Analytics</a></li>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#compression-and-security"
+                                                            style="color:#fff">Compression and security</a></li>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#express-route-_next-"
+                                                            style="color:#fff">Express route /_next/*</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#self-hosted-fonts"
+                                                    style="color:#fff">Self-hosted fonts</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#aws-cloudfront"
+                                                    style="color:#fff">AWS Cloudfront</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#material-icons"
+                                                    style="color:#fff">Material icons</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#refactor-class-component-into-functional-component"
+                                                    style="color:#fff">Refactor class component into functional
+                                                    component</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#next-js-ssr-csr"
+                                                    style="color:#fff">Next.js SSR/CSR</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#react-lifecycle-methods"
+                                                    style="color:#fff">React lifecycle methods</a>
+                                                <ul></ul>
+                                            </li>
+                                            <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#deploy-project"
+                                                    style="color:#fff">Deploy project</a>
+                                                <ul>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#heroku"
+                                                            style="color:#fff">Heroku</a></li>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#testing-deployed-project"
+                                                            style="color:#fff">Testing deployed project</a></li>
+                                                    <li><a href="/books/builder-book/prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk#aws-elastic-beanstalk-node-js-14-running-on-64bit-amazon-linux-2-"
+                                                            style="color:#fff">AWS Elastic Beanstalk (Node.js 14 running
+                                                            on 64bit Amazon Linux 2)</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div><br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br />
+                <h1 style="text-align:center;font-weight:400;line-height:45px;font-size:44px">Authors</h1>
+                <p style="text-align:center">Full-stack team</p>
+                <div class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-space-around" align="flex-start"
+                    style="padding-bottom:80px">
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"></div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+                        style="text-align:left;padding:10px 10%">
+                        <div class="MuiAvatar-root MuiAvatar-circular"
+                            style="width:80px;height:80px;margin:0px 0px 15px -12px"><img alt="Kelly"
+                                src="https://storage.googleapis.com/builderbook/kelly-picture.png"
+                                class="MuiAvatar-img" /></div>
+                        <p style="margin-left:10px"><a href="https://github.com/klyburke" target="_blank"
+                                rel="noopener noreferrer">Kelly</a></p>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+                        style="text-align:left;padding:10px 10%">
+                        <div class="MuiAvatar-root MuiAvatar-circular"
+                            style="width:80px;height:80px;margin:0px 0px 15px -12px"><img alt="Timur"
+                                src="https://storage.googleapis.com/builderbook/timur-picture.png"
+                                class="MuiAvatar-img" /></div>
+                        <p style="margin-left:10px"><a href="https://github.com/tima101" target="_blank"
+                                rel="noopener noreferrer">Timur</a></p>
+                    </div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"></div>
+                    <div class="MuiGrid-root MuiGrid-item MuiGrid-align-items-xs-flex-start MuiGrid-justify-content-xs-space-around MuiGrid-grid-md-12 MuiGrid-grid-lg-12"
+                        style="padding:0px 15%">We:<ul id="about-us">
+                            <li>
+                                <!-- -->maintain two popular repos -
+                                <!-- --> <a href="https://github.com/async-labs/saas" target="_blank"
+                                    rel="noopener noreferrer">saas</a> <!-- -->and
+                                <!-- --> <a href="https://github.com/async-labs/builderbook" target="_blank"
+                                    rel="noopener noreferrer">builderbook</a> <!-- -->(combined: over 6000 stars and
+                                1000 unique visitors per week).
+                            </li>
+                            <li>
+                                <!-- -->built and maintain the most popular React/Typescript/Node
+                                <!-- --> <a href="https://github.com/async-labs/saas" target="_blank"
+                                    rel="noopener noreferrer">boilerplate</a> <!-- -->for starting a SaaS business.
+                            </li>
+                            <li>built
+                                <!-- --> <a href="https://async-await.com" target="_blank"
+                                    rel="noopener noreferrer">Async</a>, open source team communcation web app to
+                                separate urgent vs non-urgent conversations.
+                            </li>
+                            <li>
+                                <!-- -->built
+                                <!-- --> <a href="https://workinbiotech.com" target="_blank"
+                                    rel="noopener noreferrer">Work in biotech</a>, growing niche job board for small
+                                biotech startups.
+                            </li>
+                            <li>
+                                <!-- -->built over a dozen SaaS web applications in the last 5 years and offer custom
+                                development service:
+                                <!-- --> <a href="https://async-labs.com" target="_blank"
+                                    rel="noopener noreferrer">async-labs.com</a>
+                            </li>
+                        </ul>
+                        <p></p><br />
+                    </div>
+                </div><br />
+            </div>
+            <div>
+                <div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+                    style="height:64px;padding-right:20px;background-color:#424242">
+                    <div
+                        class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-content-xs-space-around">
+                        <span>© 2018 - 2022 Builder Book</span><a href="/terms">Terms</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"dataManager":"[]","props":{"pageProps":{"isMobile":false,"user":null,"isFromServer":true,"toc":[{"_id":"5a80aabab43c2000b4b5fd02","sections":[{"_id":"6331d90fdceccd15a34466dc","text":"What you will learn","level":2,"escapedText":"what-you-will-learn"},{"_id":"6331d90fdceccd15a34466db","text":"Why should I pay $99 for this book?","level":2,"escapedText":"why-should-i-pay-99-for-this-book-"},{"_id":"6331d90fdceccd15a34466da","text":"Project structure","level":2,"escapedText":"project-structure"},{"_id":"6331d90fdceccd15a34466d9","text":"Screenshots","level":2,"escapedText":"screenshots"},{"_id":"6331d90fdceccd15a34466d8","text":"Customer pages","level":4,"escapedText":"customer-pages"},{"_id":"6331d90fdceccd15a34466d7","text":"Admin pages","level":4,"escapedText":"admin-pages"},{"_id":"6331d90fdceccd15a34466d6","text":"Authors","level":2,"escapedText":"authors"}],"title":"Introduction","slug":"introduction","order":1},{"_id":"5a80aabab43c2000b4b5fd1a","sections":[{"_id":"63399baa1cdaaa080336cad7","text":"Set up Node.js project","level":2,"escapedText":"set-up-node-js-project"},{"_id":"63399baa1cdaaa080336cad6","text":"Installing Node.js and Yarn","level":4,"escapedText":"installing-node-js-and-yarn"},{"_id":"63399baa1cdaaa080336cad5","text":"package.json","level":4,"escapedText":"package-json"},{"_id":"63399baa1cdaaa080336cad4","text":"VS code editor and lint","level":2,"escapedText":"vs-code-editor-and-lint"},{"_id":"63399baa1cdaaa080336cad3","text":"VS code editor","level":4,"escapedText":"vs-code-editor"},{"_id":"63399baa1cdaaa080336cad2","text":"ESLint and Prettier","level":4,"escapedText":"eslint-and-prettier"},{"_id":"63399baa1cdaaa080336cad1","text":"Set up Next.js project","level":2,"escapedText":"set-up-next-js-project"},{"_id":"63399baa1cdaaa080336cad0","text":"Basic structure","level":4,"escapedText":"basic-structure"},{"_id":"63399baa1cdaaa080336cacf","text":"Compiling code","level":4,"escapedText":"compiling-code"},{"_id":"63399baa1cdaaa080336cace","text":"Document HOC","level":4,"escapedText":"document-hoc"},{"_id":"63399baa1cdaaa080336cacd","text":"App HOC extension","level":4,"escapedText":"app-hoc-extension"},{"_id":"63399baa1cdaaa080336cacc","text":"Index page","level":4,"escapedText":"index-page"},{"_id":"63399baa1cdaaa080336cacb","text":"Header component","level":4,"escapedText":"header-component"},{"_id":"63399baa1cdaaa080336caca","text":"Material-UI integration","level":2,"escapedText":"material-ui-integration"},{"_id":"63399baa1cdaaa080336cac9","text":"MyDocument component","level":4,"escapedText":"mydocument-component"},{"_id":"63399baa1cdaaa080336cac8","text":"Spread operator","level":4,"escapedText":"spread-operator"},{"_id":"63399baa1cdaaa080336cac7","text":"theme and ThemeProvider","level":4,"escapedText":"theme-and-themeprovider"},{"_id":"63399baa1cdaaa080336cac6","text":"Testing Next.js/Material-UI integration","level":4,"escapedText":"testing-next-js-material-ui-integration"},{"_id":"63399baa1cdaaa080336cac5","text":"Server-side rendering","level":2,"escapedText":"server-side-rendering"},{"_id":"63399baa1cdaaa080336cac4","text":"Custom styles","level":2,"escapedText":"custom-styles"}],"title":"Set up Node.js project. VS code editor and lint. Set up Next.js project. Material-UI integration. Server-side rendering. Custom styles.","slug":"set-up-node-js-project-vs-code-editor-and-lint-set-up-next-js-project-material-ui-integration-server-side-rendering-custom-styles","order":2},{"_id":"5a80aabab43c2000b4b5fd0e","sections":[{"_id":"634ccbfa361492185893837c","text":"HTTP","level":2,"escapedText":"http"},{"_id":"634ccbfa361492185893837b","text":"Express server","level":2,"escapedText":"express-server"},{"_id":"634ccbfa361492185893837a","text":"Next-Express server, nodemon","level":4,"escapedText":"next-express-server-nodemon"},{"_id":"634ccbfa3614921858938379","text":"Index.getInitialProps","level":4,"escapedText":"index-getinitialprops"},{"_id":"634ccbfa3614921858938378","text":"Testing new server","level":4,"escapedText":"testing-new-server"},{"_id":"634ccbfa3614921858938377","text":"User data model and mongoose","level":2,"escapedText":"user-data-model-and-mongoose"},{"_id":"634ccbfa3614921858938376","text":"MongoDB database and dotenv","level":2,"escapedText":"mongodb-database-and-dotenv"},{"_id":"634ccbfa3614921858938375","text":"Testing server-database connection","level":4,"escapedText":"testing-server-database-connection"},{"_id":"634ccbfa3614921858938374","text":"Retrieving document","level":4,"escapedText":"retrieving-document"},{"_id":"634ccbfa3614921858938373","text":"Session","level":2,"escapedText":"session"},{"_id":"634ccbfa3614921858938372","text":"Configure session","level":4,"escapedText":"configure-session"},{"_id":"634ccbfa3614921858938371","text":"Save session","level":4,"escapedText":"save-session"},{"_id":"634ccbfa3614921858938370","text":"Testing session and cookie","level":4,"escapedText":"testing-session-and-cookie"},{"_id":"634ccbfa361492185893836f","text":"MenuWithAvatar and Header components","level":2,"escapedText":"menuwithavatar-and-header-components"}],"title":"HTTP. Express server. Next-Express server, nodemon. Index.getInitialProps. User data model and mongoose. MongoDB database and dotenv. Testing server-database connection. Retrieving document. Session and cookie. MenuWithAvatar and Header components.","slug":"http-express-server-next-express-server-nodemon-index-getinitialprops-user-data-model-and-mongoose-mongodb-database-and-dotenv-testing-server-database-connection-retrieving-document-session-and-cookie-menuwithavatar-and-header-components","order":3},{"_id":"5a80aabab43c2000b4b5fcf6","sections":[{"_id":"634ccc02894aad18654f1689","text":"Authentication HOC withAuth","level":2,"escapedText":"authentication-hoc-withauth"},{"_id":"634ccc02894aad18654f1688","text":"getInitialProps method","level":4,"escapedText":"getinitialprops-method"},{"_id":"634ccc02894aad18654f1687","text":"Parameters for withAuth HOC","level":4,"escapedText":"parameters-for-withauth-hoc"},{"_id":"634ccc02894aad18654f1686","text":"Testing withAuth","level":4,"escapedText":"testing-withauth"},{"_id":"634ccc02894aad18654f1685","text":"Login page and NProgress","level":2,"escapedText":"login-page-and-nprogress"},{"_id":"634ccc02894aad18654f1684","text":"Asynchronous execution and callback","level":2,"escapedText":"asynchronous-execution-and-callback"},{"_id":"634ccc02894aad18654f1683","text":"Promise.then","level":4,"escapedText":"promise-then"},{"_id":"634ccc02894aad18654f1682","text":"async/await","level":4,"escapedText":"async-await"},{"_id":"634ccc02894aad18654f1681","text":"Google Oauth API infrastructure","level":2,"escapedText":"google-oauth-api-infrastructure"},{"_id":"634ccc02894aad18654f1680","text":"setupGoogle, verify, passport and strategy","level":4,"escapedText":"setupgoogle-verify-passport-and-strategy"},{"_id":"634ccc02894aad18654f167f","text":"Express routes /auth/google, /oauth2callback, /logout","level":4,"escapedText":"express-routes-auth-google-oauth2callback-logout"},{"_id":"634ccc02894aad18654f167e","text":"User.publicFields and User.signInOrSignUp methods","level":4,"escapedText":"user-publicfields-and-user-signinorsignup-methods"},{"_id":"634ccc02894aad18654f167d","text":"generateSlug method","level":4,"escapedText":"generateslug-method"},{"_id":"634ccc02894aad18654f167c","text":"this","level":4,"escapedText":"this"},{"_id":"634ccc02894aad18654f167b","text":"Set up at Google Cloud Platform and testing","level":4,"escapedText":"set-up-at-google-cloud-platform-and-testing"}],"title":"Authentication HOC. getInitialProps method. Login page and NProgress. Asynchronous execution. Promise.then. async/await. Google Oauth API infrastructure. setupGoogle, verify, passport, strategy. Express routes /auth/google, /oauth2callback, /logout. generateSlug. this. Set up at Google Cloud Platform.","slug":"authentication-hoc-getinitialprops-method-login-page-and-nprogress-asynchronous-execution-promise-then-async-await-google-oauth-api-infrastructure-setupgoogle-verify-passport-strategy-express-routes-auth-google-oauth2callback-logout-generateslug-this-set-up-at-google-cloud-platform","order":4},{"_id":"5a80aabab43c2000b4b5fd15","sections":[{"_id":"6331d92aade0ca15d30d431e","text":"Testing method with Jest","level":2,"escapedText":"testing-method-with-jest"},{"_id":"6331d92aade0ca15d30d431d","text":"Transactional email API with AWS SES service","level":2,"escapedText":"transactional-email-api-with-aws-ses-service"},{"_id":"6331d92aade0ca15d30d431c","text":"Set up AWS SES service, security credentials","level":4,"escapedText":"set-up-aws-ses-service-security-credentials"},{"_id":"6331d92aade0ca15d30d431b","text":"sendEmail method","level":4,"escapedText":"sendemail-method"},{"_id":"6331d92aade0ca15d30d431a","text":"Export and import syntax for server code","level":4,"escapedText":"export-and-import-syntax-for-server-code"},{"_id":"6331d92aade0ca15d30d4319","text":"EmailTemplate data model, insertTemplates and getEmailTemplate methods","level":4,"escapedText":"emailtemplate-data-model-inserttemplates-and-getemailtemplate-methods"},{"_id":"6331d92aade0ca15d30d4318","text":"Update User.signInOrSignUp","level":4,"escapedText":"update-user-signinorsignup"},{"_id":"6331d92aade0ca15d30d4317","text":"Testing","level":4,"escapedText":"testing"},{"_id":"6331d92aade0ca15d30d4316","text":"Informational success/error messages","level":2,"escapedText":"informational-success-error-messages"},{"_id":"6331d92aade0ca15d30d4315","text":"Notifier component","level":4,"escapedText":"notifier-component"},{"_id":"6331d92aade0ca15d30d4314","text":"notify method","level":4,"escapedText":"notify-method"},{"_id":"6331d92aade0ca15d30d4313","text":"Example of usage","level":4,"escapedText":"example-of-usage"}],"title":"Testing method with Jest. Transactional email API with AWS SES service. Set up AWS SES service, security credentials. sendEmail method. Export and import syntax for server code. EmailTemplate data model. Update User.signInOrSignUp. Informational success/error messages. Notifier component. notify method.","slug":"testing-method-with-jest-transactional-email-api-with-aws-ses-service-set-up-aws-ses-service-security-credentials-sendemail-method-export-and-import-syntax-for-server-code-emailtemplate-data-model-update-user-signinorsignup-informational-success-error-messages-notifier-component-notify-method","order":5},{"_id":"5a80aabab43c2000b4b5fd09","sections":[{"_id":"6331d931514e4a15de9b5727","text":"Book data model","level":2,"escapedText":"book-data-model"},{"_id":"6331d931514e4a15de9b5726","text":"Schema for Book data model","level":4,"escapedText":"schema-for-book-data-model"},{"_id":"6331d931514e4a15de9b5725","text":"Static methods for Book data model","level":4,"escapedText":"static-methods-for-book-data-model"},{"_id":"6331d931514e4a15de9b5724","text":"Chapter data model","level":2,"escapedText":"chapter-data-model"},{"_id":"6331d931514e4a15de9b5723","text":"Schema for Chapter data model","level":4,"escapedText":"schema-for-chapter-data-model"},{"_id":"6331d931514e4a15de9b5722","text":"Static methods for Chapter data model","level":4,"escapedText":"static-methods-for-chapter-data-model"},{"_id":"6331d931514e4a15de9b5721","text":"MongoDB index","level":2,"escapedText":"mongodb-index"},{"_id":"6331d931514e4a15de9b5720","text":"API infrastructure and user roles","level":2,"escapedText":"api-infrastructure-and-user-roles"},{"_id":"6331d931514e4a15de9b571f","text":"Pages and components for user roles","level":4,"escapedText":"pages-and-components-for-user-roles"},{"_id":"6331d931514e4a15de9b571e","text":"API methods by user roles","level":4,"escapedText":"api-methods-by-user-roles"},{"_id":"6331d931514e4a15de9b571d","text":"Express routes by user roles","level":4,"escapedText":"express-routes-by-user-roles"},{"_id":"6331d931514e4a15de9b571c","text":"Custom routing for pages","level":4,"escapedText":"custom-routing-for-pages"},{"_id":"6331d931514e4a15de9b571b","text":"Read chapter API","level":2,"escapedText":"read-chapter-api"},{"_id":"6331d931514e4a15de9b571a","text":"ReadChapter page","level":4,"escapedText":"readchapter-page"},{"_id":"6331d931514e4a15de9b5719","text":"Testing Read chapter API","level":4,"escapedText":"testing-read-chapter-api"}],"title":"Book data model. Chapter data model. MongoDB index. API infrastructure and user roles. Read chapter API.","slug":"book-data-model-chapter-data-model-mongodb-index-api-infrastructure-and-user-roles-read-chapter-api","order":6},{"_id":"5a80aabab43c2000b4b5fd24","sections":[{"_id":"6331d9383fb80e15e9aa90ca","text":"Set up Github API infrastructure","level":2,"escapedText":"set-up-github-api-infrastructure"},{"_id":"6331d9383fb80e15e9aa90c9","text":"setupGithub method","level":4,"escapedText":"setupgithub-method"},{"_id":"6331d9383fb80e15e9aa90c8","text":"Github-related Express routes","level":4,"escapedText":"github-related-express-routes"},{"_id":"6331d9383fb80e15e9aa90c7","text":"Sync content API infrastructure","level":2,"escapedText":"sync-content-api-infrastructure"},{"_id":"6331d9383fb80e15e9aa90c6","text":"Github server-side methods","level":4,"escapedText":"github-server-side-methods"},{"_id":"6331d9383fb80e15e9aa90c5","text":"Book.syncContent and Chapter.syncContent","level":4,"escapedText":"book-synccontent-and-chapter-synccontent"},{"_id":"6331d9383fb80e15e9aa90c4","text":"markdownToHtml and getSections methods","level":4,"escapedText":"markdowntohtml-and-getsections-methods"},{"_id":"6331d9383fb80e15e9aa90c3","text":"Express routes for Admin user","level":4,"escapedText":"express-routes-for-admin-user"},{"_id":"6331d9383fb80e15e9aa90c2","text":"API methods for Admin user","level":4,"escapedText":"api-methods-for-admin-user"},{"_id":"6331d9383fb80e15e9aa90c1","text":"Missing UI infrastructure for Admin user","level":2,"escapedText":"missing-ui-infrastructure-for-admin-user"},{"_id":"6331d9383fb80e15e9aa90c0","text":"Two improvements","level":2,"escapedText":"two-improvements"},{"_id":"6331d9383fb80e15e9aa90bf","text":"routesWithSlug","level":4,"escapedText":"routeswithslug"},{"_id":"6331d9383fb80e15e9aa90be","text":"Redirect UX for Admin and Customer users","level":4,"escapedText":"redirect-ux-for-admin-and-customer-users"},{"_id":"6331d9383fb80e15e9aa90bd","text":"Testing","level":2,"escapedText":"testing"},{"_id":"6331d9383fb80e15e9aa90bc","text":"Connecting Github","level":4,"escapedText":"connecting-github"},{"_id":"6331d9383fb80e15e9aa90bb","text":"Adding new book","level":4,"escapedText":"adding-new-book"},{"_id":"6331d9383fb80e15e9aa90ba","text":"Editing existing book","level":4,"escapedText":"editing-existing-book"},{"_id":"6331d9383fb80e15e9aa90b9","text":"Syncing content","level":4,"escapedText":"syncing-content"}],"title":"Set up Github API infrastructure. Sync content API infrastructure. Missing UI infrastructure for Admin user. Two improvements. Testing.","slug":"set-up-github-api-infrastructure-sync-content-api-infrastructure-missing-ui-infrastructure-for-admin-user-two-improvements-testing","order":7},{"_id":"5a80aabab43c2000b4b5fcf5","sections":[{"_id":"6331d93fdad10715f85a280c","text":"Table of Contents","level":2,"escapedText":"table-of-contents"},{"_id":"6331d93fdad10715f85a280b","text":"Sections","level":4,"escapedText":"sections"},{"_id":"6331d93fdad10715f85a280a","text":"Sidebar","level":4,"escapedText":"sidebar"},{"_id":"6331d93fdad10715f85a2809","text":"Toggle TOC","level":4,"escapedText":"toggle-toc"},{"_id":"6331d93fdad10715f85a2808","text":"Highlight for section","level":2,"escapedText":"highlight-for-section"},{"_id":"6331d93fdad10715f85a2807","text":"Active section","level":4,"escapedText":"active-section"},{"_id":"6331d93fdad10715f85a2806","text":"Hide Header","level":2,"escapedText":"hide-header"},{"_id":"6331d93fdad10715f85a2805","text":"Mobile browser","level":2,"escapedText":"mobile-browser"}],"title":"Table of Contents. Sections. Sidebar. Toggle TOC. Highlight for section. Active section. Hide Header. Mobile browser.","slug":"table-of-contents-sections-sidebar-toggle-toc-highlight-for-section-active-section-hide-header-mobile-browser","order":8},{"_id":"5a80aabab43c2000b4b5fcf2","sections":[{"_id":"6331d94779baea1603ea19cb","text":"BuyButton component","level":2,"escapedText":"buybutton-component"},{"_id":"6331d94779baea1603ea19ca","text":"Buy book API infrastructure","level":2,"escapedText":"buy-book-api-infrastructure"},{"_id":"6331d94779baea1603ea19c9","text":"fetchCheckoutSessionApiMethod API method","level":4,"escapedText":"fetchcheckoutsessionapimethod-api-method"},{"_id":"6331d94779baea1603ea19c8","text":"Express route /stripe/fetch-checkout-session","level":4,"escapedText":"express-route-stripe-fetch-checkout-session"},{"_id":"6331d94779baea1603ea19c7","text":"Stripe method createSession","level":4,"escapedText":"stripe-method-createsession"},{"_id":"6331d94779baea1603ea19c6","text":"Express route for request from Stripe server, retrieveSession","level":4,"escapedText":"express-route-for-request-from-stripe-server-retrievesession"},{"_id":"6331d94779baea1603ea19c5","text":"Setup at Stripe dashboard and environmental variables","level":2,"escapedText":"setup-at-stripe-dashboard-and-environmental-variables"},{"_id":"6331d94779baea1603ea19c4","text":"Static method Book.buy","level":4,"escapedText":"static-method-book-buy"},{"_id":"6331d94779baea1603ea19c3","text":"Purchase data model","level":4,"escapedText":"purchase-data-model"},{"_id":"6331d94779baea1603ea19c2","text":"isPurchased and ReadChapter page","level":2,"escapedText":"ispurchased-and-readchapter-page"},{"_id":"6331d94779baea1603ea19c1","text":"isPurchased, preview and full content","level":4,"escapedText":"ispurchased-preview-and-full-content"},{"_id":"6331d94779baea1603ea19c0","text":"Adding BuyButton to ReadChapter","level":4,"escapedText":"adding-buybutton-to-readchapter"},{"_id":"6331d94779baea1603ea19bf","text":"Testing Buy book API","level":4,"escapedText":"testing-buy-book-api"},{"_id":"6331d94779baea1603ea19be","text":"Redirect","level":2,"escapedText":"redirect"},{"_id":"6331d94779baea1603ea19bd","text":"My books API and MyBooks page","level":2,"escapedText":"my-books-api-and-mybooks-page"},{"_id":"6331d94779baea1603ea19bc","text":"getMyBookListApiMethod API method","level":4,"escapedText":"getmybooklistapimethod-api-method"},{"_id":"6331d94779baea1603ea19bb","text":"Express route /my-books","level":4,"escapedText":"express-route-my-books"},{"_id":"6331d94779baea1603ea19ba","text":"Static method Book.getPurchasedBooks","level":4,"escapedText":"static-method-book-getpurchasedbooks"},{"_id":"6331d94779baea1603ea19b9","text":"Mailchimp API","level":2,"escapedText":"mailchimp-api"},{"_id":"6331d94779baea1603ea19b8","text":"callAPI method","level":4,"escapedText":"callapi-method"},{"_id":"6331d94779baea1603ea19b7","text":"addToMailchimp method","level":4,"escapedText":"addtomailchimp-method"},{"_id":"6331d94779baea1603ea19b6","text":"Adding addToMailchimp to User.signInOrSignUp and Book.buy","level":4,"escapedText":"adding-addtomailchimp-to-user-signinorsignup-and-book-buy"},{"_id":"6331d94779baea1603ea19b5","text":"Environmental variables for Mailchimp API","level":4,"escapedText":"environmental-variables-for-mailchimp-api"},{"_id":"6331d94779baea1603ea19b4","text":"Testing Mailchimp API","level":4,"escapedText":"testing-mailchimp-api"}],"title":"BuyButton component. Buy book API infrastructure. Setup at Stripe dashboard and environmental variables. isPurchased and ReadChapter page. Redirect. My books API and MyBooks page. Mailchimp API.","slug":"buybutton-component-buy-book-api-infrastructure-setup-at-stripe-dashboard-and-environmental-variables-ispurchased-and-readchapter-page-redirect-my-books-api-and-mybooks-page-mailchimp-api","order":9},{"_id":"5f5fedbce2f394090fb73dab","title":"Prepare project for deployment. Environmental variables, production/development. Logger. SEO, robots.txt, sitemap.xml. Compression and security. Deploy project. Heroku. Testing deployed project. AWS Elastic Beanstalk.","slug":"prepare-project-for-deployment-environmental-variables-production-development-logger-seo-robots-txt-sitemap-xml-compression-and-security-deploy-project-heroku-testing-deployed-project-aws-elastic-beanstalk","sections":[{"_id":"6331d94ff7d217160e8ce5c0","text":"Prepare project for deployment","level":2,"escapedText":"prepare-project-for-deployment"},{"_id":"6331d94ff7d217160e8ce5bf","text":"Environmental variables, production/development","level":4,"escapedText":"environmental-variables-production-development"},{"_id":"6331d94ff7d217160e8ce5be","text":"Logger","level":4,"escapedText":"logger"},{"_id":"6331d94ff7d217160e8ce5bd","text":"SEO: robots.txt, sitemap.xml","level":4,"escapedText":"seo-robots-txt-sitemap-xml"},{"_id":"6331d94ff7d217160e8ce5bc","text":"Google Analytics","level":4,"escapedText":"google-analytics"},{"_id":"6331d94ff7d217160e8ce5bb","text":"Compression and security","level":4,"escapedText":"compression-and-security"},{"_id":"6331d94ff7d217160e8ce5ba","text":"Express route /_next/*","level":4,"escapedText":"express-route-_next-"},{"_id":"6331d94ff7d217160e8ce5b9","text":"Self-hosted fonts","level":2,"escapedText":"self-hosted-fonts"},{"_id":"6331d94ff7d217160e8ce5b8","text":"AWS Cloudfront","level":2,"escapedText":"aws-cloudfront"},{"_id":"6331d94ff7d217160e8ce5b7","text":"Material icons","level":2,"escapedText":"material-icons"},{"_id":"6331d94ff7d217160e8ce5b6","text":"Refactor class component into functional component","level":2,"escapedText":"refactor-class-component-into-functional-component"},{"_id":"6331d94ff7d217160e8ce5b5","text":"Next.js SSR/CSR","level":2,"escapedText":"next-js-ssr-csr"},{"_id":"6331d94ff7d217160e8ce5b4","text":"React lifecycle methods","level":2,"escapedText":"react-lifecycle-methods"},{"_id":"6331d94ff7d217160e8ce5b3","text":"Deploy project","level":2,"escapedText":"deploy-project"},{"_id":"6331d94ff7d217160e8ce5b2","text":"Heroku","level":4,"escapedText":"heroku"},{"_id":"6331d94ff7d217160e8ce5b1","text":"Testing deployed project","level":4,"escapedText":"testing-deployed-project"},{"_id":"6331d94ff7d217160e8ce5b0","text":"AWS Elastic Beanstalk (Node.js 14 running on 64bit Amazon Linux 2)","level":4,"escapedText":"aws-elastic-beanstalk-node-js-14-running-on-64bit-amazon-linux-2-"}],"order":10}]}},"page":"/","query":{},"buildId":"1i_of60B1hrtU_qm3Xhn1"}</script>
+    <script nomodule="" src="/_next/static/runtime/polyfills-62c5ca9d57b4a62b381b.js">
+    </script>
+    <script async="" data-next-page="/" src="/_next/static/1i_of60B1hrtU_qm3Xhn1/pages/index.js">
+    </script>
+    <script async="" data-next-page="/_app" src="/_next/static/1i_of60B1hrtU_qm3Xhn1/pages/_app.js">
+    </script>
+    <script src="/_next/static/runtime/webpack-08f7b238829422e3b9b2.js" async="">
+    </script>
+    <script src="/_next/static/chunks/commons.acfd3de9d72e3d07454b.js" async="">
+    </script>
+    <script src="/_next/static/runtime/main-29d82fc5740c7eea8b7d.js" async="">
+    </script>
+</body>
+
+</html>
